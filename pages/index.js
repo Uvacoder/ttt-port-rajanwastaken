@@ -1,5 +1,52 @@
 import { useState } from 'react'
 import Head from 'next/head'
+import Link from 'next/link'
+
+const callouts = [
+  {
+    name: 'Open Letter',
+    description: 'Equitable Food Security',
+    imageSrc: 'https://images.unsplash.com/photo-1593113598332-cd288d649433?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80',
+    imageAlt: 'food bank.',
+    href: 'https://equity.towards.live',
+  },
+  {
+    name: 'Etherealism',
+    description: 'Abstract Poetic Expression',
+    imageSrc: 'https://cloud-r2onbrszd-hack-club-bot.vercel.app/0image.png',
+    imageAlt: 'etheralism.',
+    href: 'https://instagram.com/towards.etherealism',
+  },
+  {
+    name: 'Reconciliation',
+    description: '160km Run For Hope',
+    imageSrc: 'https://cloud-e9m8zg3xl-hack-club-bot.vercel.app/0image.png',
+    imageAlt: 'run for hope.',
+    href: 'https://youtu.be/lOFpyvGaCP8',
+  },
+  {
+    name: "Children's Novel",
+    description: 'Autism Awareness',
+    imageSrc: 'https://cloud-16c6pal7a-hack-club-bot.vercel.app/0bookpost.png',
+    imageAlt: 'breaking barriers.',
+    href: 'https://book.heyrajan.com',
+  },
+  {
+    name: 'Owning Medical Data',
+    description: 'Medical Networks',
+    imageSrc: 'https://cloud-cssrzjtwc-hack-club-bot.vercel.app/0screen_shot_2022-03-11_at_8.53.59_pm.png',
+    imageAlt: 'bloom network.',
+    href: 'https://github.com/rajanwastaken/bloom',
+  },
+  {
+    name: 'Digital Communities',
+    description: 'Indigenous Pipeline Infrastructure',
+    imageSrc: 'https://cloud-ra5alevdj-hack-club-bot.vercel.app/0screen_shot_2022-03-11_at_8.56.49_pm.png',
+    imageAlt: 'project hestia',
+    href: 'https://youtu.be/inOwByW_ufs',
+  },
+]
+
 
 const product = {
   name: "Hey, I'm Rajan",
@@ -39,7 +86,7 @@ const product = {
     { name: '3XL', inStock: true },
   ],
   description:
-    "i'm a 16 year old developer, author and researcher based in toronto. i'm rebuilding patient data aggregation & poetic expression through generative art. in my free time, u explore evolutionary game theory, actuarial science and political science.",
+    "i'm a 16 year old developer, author and researcher based in toronto. i'm rebuilding patient data aggregation & poetic expression through generative art. in my free time, i explore evolutionary game theory, actuarial science and political science.",
     follow:
     "Currently, ",
   details:
@@ -58,12 +105,12 @@ export default function Example() {
   return (
     <div className="bg-black">
       <Head><title>rajan.</title></Head>
-      <div className="pt-6">
+      <div className="lg:pt-6">
         
 
         {/* Image gallery */}
-        <div className="mt-6 max-w-2xl mx-auto sm:px-6 lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-3 lg:gap-x-8">
-          <div className="hidden aspect-w-3 aspect-h-4 rounded-lg overflow-hidden lg:block">
+        <div className="lg:mt-6 max-w-2xl mx-auto sm:px-6 lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-3 lg:gap-x-8 sm:hidden">
+          <div className="aspect-w-3 aspect-h-4 lg:rounded-lg overflow-hidden lg:block">
             <img
               src={product.images[0].src}
               alt={product.images[0].alt}
@@ -86,7 +133,7 @@ export default function Example() {
               />
             </div>
           </div>
-          <div className="aspect-w-4 aspect-h-5 sm:rounded-lg lg:aspect-w-3 lg:aspect-h-4">
+          <div className="hidden aspect-w-3 aspect-h-4 rounded-lg overflow-hidden lg:block">
             <img
               src={product.images[3].src}
               alt={product.images[3].alt}
@@ -103,21 +150,25 @@ export default function Example() {
 
           {/* Options */}
           <div className="mt-4 lg:mt-0 lg:row-span-3">
-            <h2 className="sr-only">Product information</h2>
-            <p className="text-2xl text-gray-100 font-bold">thoughts</p>
+            <p className="text-2xl text-gray-100 font-bold hidden aspect-w-3 aspect-h-4 rounded-lg overflow-hidden lg:block">latest <u><Link href="writings">thoughts</Link></u></p>
 
             {/* Reviews */}
             <div className="mt-6 text-gray-200">
-             failed to load
+            <p className="text-xl text-gray-200 pb-1"><Link href="writings/soulbound">soulbound.</Link></p>
+            <p className="text-md text-gray-300 pb-6">What if the world around us, and the things we do, could be soulbound?</p>
+
+            <p className="text-xl text-gray-200 pb-1"><Link href="writings/surveillance-capitalism">surveillance capitalism.</Link></p>
+            <p className="text-md text-gray-300 pb-6">How do we as ordinary people, take our self-determination back?</p>
+
+            <p className="text-xl text-gray-200 pb-1"><Link href="writings/ethnocentrism">ethnocentrism.</Link></p>
+            <p className="text-md text-gray-300 pb-6">The contextual debate of universalism vs relativism.</p>
             </div>
 
           </div>
           
 
           <div className="py-10 lg:pt-6 lg:pb-16 lg:col-start-1 lg:col-span-2 lg:border-r lg:border-gray-800 lg:pr-8">
-            {/* Description and details */}
             <div>
-              <h3 className="sr-only">Description</h3>
 
               <div className="space-y-6">
                 <p className="text-base text-gray-200">{product.description}<br/><br/>
@@ -130,6 +181,33 @@ export default function Example() {
           </div>
         </div>
       </div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-2xl mx-auto py-4 sm:py-6 lg:py-6 lg:max-w-none">
+            <h2 className="text-3xl font-bold text-gray-200"><b>towards</b> altruisitic & actionable tech</h2><br/><br/>
+  
+            <div className="mt-6 space-y-12 lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-x-6">
+              {callouts.map((callout) => (
+                <div key={callout.name} className="group relative">
+                  <div className="relative w-full h-80 bg-white rounded-lg overflow-hidden group-hover:opacity-75 sm:aspect-w-2 sm:aspect-h-1 sm:h-64 lg:aspect-w-1 lg:aspect-h-1">
+                    <img
+                      src={callout.imageSrc}
+                      alt={callout.imageAlt}
+                      className="w-full h-full object-center object-cover"
+                    />
+                  </div>
+                  <h3 className="mt-6 text-sm text-gray-400">
+                    <a href={callout.href}>
+                      <span className="absolute inset-0" />
+                      {callout.name}
+                    </a>
+                  </h3>
+                  <p className="text-base font-semibold text-gray-200">{callout.description}</p>
+                  <br/><br/>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
     </div>
   )
 }
