@@ -43,15 +43,15 @@ export default function Example() {
       <Head><title>decentralized social.</title></Head>
       <div className="pt-6">
 
-        <div className="max-w-2xl mx-auto pt-10 pb-16 px-4 sm:px-6 lg:max-w-7xl lg:pt-16 lg:pb-24 lg:px-8 lg:grid lg:grid-cols-3 lg:grid-rows-[auto,auto,1fr] lg:gap-x-8">
-          <div className="lg:col-span-10 lg:border-r lg:border-zinc-100 lg:pr-8">
+      <div className="max-w-2xl mx-auto pt-10 pb-16 px-4 sm:px-6 lg:max-w-7xl lg:pt-16 lg:pb-24 lg:px-8 lg:grid lg:grid-cols-12 lg:grid-rows-[auto,auto,1fr] lg:gap-x-8">
+          <div className="lg:col-span-10 lg:col-start-3 lg:border-r lg:border-zinc-100 lg:pr-8">
           <h2 className="sm:text-xl font-bold tracking-tight text-gray-400 pb-6"><Link href="/">rajan</Link> / <Link href="/writings">writings</Link> / <Link href="/writings/deso">deso</Link></h2>
             <h1 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">Startup Case Study, a DAO for Decentralized Social.</h1>
           </div>
 
           
 
-          <div className="py-10 lg:pt-6 lg:pb-16 lg:col-start-1 lg:col-span-6 lg:pr-8">
+          <div className="py-10 lg:pt-6 lg:pb-16 lg:col-start-3 lg:col-span-8 lg:pr-8">
             <div>
 
               <div className="space-y-6">

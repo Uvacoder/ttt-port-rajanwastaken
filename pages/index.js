@@ -1,8 +1,16 @@
 import { useState } from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
+import Blog from './writings'
 
 const callouts = [
+  {
+    name: 'Abstract Generative Art',
+    description: 'Poem Synthesis & Visualization',
+    imageSrc: 'https://cloud-r2onbrszd-hack-club-bot.vercel.app/0image.png',
+    imageAlt: 'etheralism.',
+    href: 'https://instagram.com/towards.etherealism',
+  },
   {
     name: 'Open Letter',
     description: 'Equitable Food Security',
@@ -11,8 +19,74 @@ const callouts = [
     href: 'https://equity.towards.live',
   },
   {
-    name: 'Etherealism',
-    description: 'Abstract Poetic Expression',
+    name: 'Data Aggregation',
+    description: 'Decentralized Medical Network',
+    imageSrc: 'https://cloud-cssrzjtwc-hack-club-bot.vercel.app/0screen_shot_2022-03-11_at_8.53.59_pm.png',
+    imageAlt: 'bloom network.',
+    href: 'https://github.com/rajanwastaken/bloom',
+  },
+  {
+    name: 'Digital Communities',
+    description: 'Indigenous Pipeline Infrastructure',
+    imageSrc: 'https://cloud-ra5alevdj-hack-club-bot.vercel.app/0screen_shot_2022-03-11_at_8.56.49_pm.png',
+    imageAlt: 'project hestia',
+    href: 'https://youtu.be/inOwByW_ufs',
+  },
+  {
+    name: 'Encryption Algorithms',
+    description: 'Custom Blockchain in 100 Lines',
+    imageSrc: 'https://file.heyrajan.com/workshop.png',
+    imageAlt: 'project hestia',
+    href: 'https://www.youtube.com/watch?v=3HZJ7ZoQIUE&ab_channel=RajanAgarwal',
+  },
+  {
+    name: 'Flow Fields',
+    description: 'Generative Art',
+    imageSrc: 'https://file.heyrajan.com/art.png',
+    imageAlt: 'project hestia',
+    href: 'https://youtu.be/inOwByW_ufs',
+  },
+  {
+    name: "Children's Novel",
+    description: 'Autism Awareness',
+    imageSrc: 'https://cloud-16c6pal7a-hack-club-bot.vercel.app/0bookpost.png',
+    imageAlt: 'breaking barriers.',
+    href: 'https://book.heyrajan.com',
+  },
+  {
+    name: 'Gamifying Political Awareness',
+    description: 'Policy Chat Rooms',
+    imageSrc: 'https://user-images.githubusercontent.com/64426829/133933404-ff1e8f03-f689-4fba-a43a-bb1a4766540d.png',
+    imageAlt: 'project hestia',
+    href: 'https://github.com/diplomatica-htn',
+  },
+  {
+    name: 'Reconciliation',
+    description: '160km Run For Hope',
+    imageSrc: 'https://cloud-e9m8zg3xl-hack-club-bot.vercel.app/0image.png',
+    imageAlt: 'run for hope.',
+    href: 'https://run.heyrajan.com',
+  },
+]
+
+const technical = [
+  {
+    name: 'Data Aggregation',
+    description: 'Decentralized Medical Network',
+    imageSrc: 'https://cloud-cssrzjtwc-hack-club-bot.vercel.app/0screen_shot_2022-03-11_at_8.53.59_pm.png',
+    imageAlt: 'bloom network.',
+    href: 'https://github.com/rajanwastaken/bloom',
+  },
+  {
+    name: 'Open Letter',
+    description: 'Custom Blockchain',
+    imageSrc: 'https://images.unsplash.com/photo-1593113598332-cd288d649433?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80',
+    imageAlt: 'food bank.',
+    href: 'https://equity.towards.live',
+  },
+  {
+    name: 'Machine Learning',
+    description: 'Poem Synthesis & Visualization',
     imageSrc: 'https://cloud-r2onbrszd-hack-club-bot.vercel.app/0image.png',
     imageAlt: 'etheralism.',
     href: 'https://instagram.com/towards.etherealism',
@@ -30,13 +104,6 @@ const callouts = [
     imageSrc: 'https://cloud-16c6pal7a-hack-club-bot.vercel.app/0bookpost.png',
     imageAlt: 'breaking barriers.',
     href: 'https://book.heyrajan.com',
-  },
-  {
-    name: 'Owning Medical Data',
-    description: 'Medical Networks',
-    imageSrc: 'https://cloud-cssrzjtwc-hack-club-bot.vercel.app/0screen_shot_2022-03-11_at_8.53.59_pm.png',
-    imageAlt: 'bloom network.',
-    href: 'https://github.com/rajanwastaken/bloom',
   },
   {
     name: 'Digital Communities',
@@ -183,9 +250,9 @@ export default function Example() {
       </div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl mx-auto py-4 sm:py-6 lg:py-6 lg:max-w-none">
-            <h2 className="text-3xl font-bold text-gray-200"><b>towards</b> altruisitic & actionable tech</h2><br/><br/>
+            <h2 className="text-3xl font-bold text-gray-200"><b>towards</b> altruistic tech</h2><br/><br/>
   
-            <div className="mt-6 space-y-12 lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-x-6">
+            <div className="mt-3 space-y-12 lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-x-6">
               {callouts.map((callout) => (
                 <div key={callout.name} className="group relative">
                   <div className="relative w-full h-80 bg-white rounded-lg overflow-hidden group-hover:opacity-75 sm:aspect-w-2 sm:aspect-h-1 sm:h-64 lg:aspect-w-1 lg:aspect-h-1">
@@ -208,6 +275,7 @@ export default function Example() {
             </div>
           </div>
         </div>
+        <Blog/>
     </div>
   )
 }
