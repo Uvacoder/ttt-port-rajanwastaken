@@ -5,7 +5,7 @@ export default function Blog() {
     return (
         <div className="flex justify-center items-center bg-black">
             <Head>
-                <title>thoughts.</title>
+                <title>rajan.</title>
             </Head>
             <div className="2xl:mx-auto 2xl:container lg:px-20 lg:py-16 md:py-12 md:px-6 py-9 px-4 w-96 sm:w-auto">
                 <div className="flex flex-col items-center justify-center">
