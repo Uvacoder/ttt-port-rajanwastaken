@@ -315,7 +315,7 @@ export default function Example() {
                     src={callout.imageSrc}
                     alt={callout.imageAlt}
                     width="700"
-                    height="460"
+                    height="480"
                     className="w-full h-full object-center object-cover"
                   />
                 </div>
