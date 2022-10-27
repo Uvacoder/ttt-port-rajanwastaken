@@ -161,7 +161,7 @@ export default function Example() {
   return (
     <div className="bg-black">
       <Head>
-        <title>rajan.</title>
+        <title>uvacoder.</title>
       </Head>
       <div
         style={{
@@ -224,22 +224,20 @@ export default function Example() {
         <div className="max-w-2xl mx-auto pt-10 pb-8 px-4 sm:px-6 lg:max-w-7xl lg:pt-16 lg:pb-8 lg:px-8 lg:grid lg:grid-cols-3 lg:grid-rows-[auto,auto,1fr] lg:gap-x-8">
           <div className="lg:col-span-2 lg:border-r lg:border-gray-800 lg:pr-8">
             <h1 className="text-2xl font-bold tracking-tight text-gray-100 sm:text-3xl">
-              rajan agarwal.
+              uvacoder.
             </h1>
             <div className="py-10 lg:pt-6 lg:pb-16 lg:col-start-1 lg:col-span-2 lg:pr-8">
               <div>
                 <div className="space-y-6">
                   <p className="text-base text-gray-200">
-                    Seeking serendipity in code, craft & curiosity. <br />
-                    Designing & engineering high-scale communities. <br />
-                    Meeting wonderful people along the way.
+                    Master tinkerer, <br />
+                    Jack of all trades, <br />
+                    and master of none.
                     <br />
                     <br />
-                    Currently, I&#39;m building ConnexSci to make research
-                    accessible and open to funding in the public sector. On the
-                    side, I&#39;m working at JEC Toronto (COO), ChoiceDAO (Core)
-                    and Cobweb (Researcher). Previously, I worked at Camp Social
-                    as a Software Engineer Intern.
+                    Currently, I&#39;m exploring all the newer platforms 
+                    popping up, I&#39;m working outside woodworking and
+                    building that and that.
                     <br />
                     <br />
                     In my free time, I enjoy writing and spending time outdoors.
@@ -333,7 +331,7 @@ export default function Example() {
               </div>
             ))}
           </div>
-          <p style={{ color: 'white', textAlign: 'center' }}><a href="https://twitter.com/rajanwastaken" rel="noreferrer" target="_blank">twitter</a> | <a href="https://github.com/rajanwastaken" target="_blank" rel="noreferrer">github</a> | <a href="https://instagram.com/rajanwastaken" target="_blank" rel="noreferrer">instagram</a> | <a href="https://linkedin.com/in/rajansagarwal" target="_blank" rel="noreferrer">linkedin</a> | <a href="mailto:rajan.ag005@gmail.com" target="_blank" rel="noreferrer">email</a></p><br/>
+          <p style={{ color: 'white', textAlign: 'center' }}><a href="https://twitter.com/VaLandscapes" rel="noreferrer" target="_blank">twitter</a> | <a href="https://github.com/uvacoder" target="_blank" rel="noreferrer">github</a> | <a href="https://codepen.io/uvacoder" target="_blank" rel="noreferrer">codepen</a> | <a href="https://linkedin.com/in/alecbcampbell" target="_blank" rel="noreferrer">linkedin</a> | <a href="mailto:uvacoder@proton.me" target="_blank" rel="noreferrer">email</a></p><br/>
         </div>
       </div>
       {/*
