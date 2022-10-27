@@ -111,8 +111,8 @@ const product = {
       alt: "Elsa in white dress with blue/white background.",
     },
     {
-      src: "https://file.rajanagarwal.xyz/clock.jpg",
-      alt: "Model wearing plain white basic tee.",
+      src: "https://res.cloudinary.com/iarenotamnot/image/upload/v1662748909/profilepics/elsa-lookback.jpg",
+      alt: "Elsa in dress doing a lookback.",
     },
   ],
   description:
