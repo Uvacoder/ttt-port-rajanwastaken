@@ -99,16 +99,16 @@ const callouts = [
 const product = {
   images: [
     {
-      src: "https://file.rajanagarwal.xyz/i-profile.jpg",
-      alt: "Two each of gray, white, and black shirts laying flat.",
+      src: "https://raw.githubusercontent.com/Uvacoder/port-rajanwastaken/main/files/IMG_7302.JPG",
+      alt: "Dribbble invite to the game with sneakers on court.",
     },
     {
-      src: "https://file.rajanagarwal.xyz/staywoke2.jpg",
-      alt: "Model wearing plain black basic tee.",
+      src: "https://raw.githubusercontent.com/Uvacoder/port-rajanwastaken/main/files/IMG_5785.JPG",
+      alt: "Elsa with scared look while riding a horse.",
     },
     {
-      src: "https://file.rajanagarwal.xyz/ori3.png",
-      alt: "Model wearing plain gray basic tee.",
+      src: "https://raw.githubusercontent.com/Uvacoder/port-rajanwastaken/main/files/IMG_5777.JPG",
+      alt: "Elsa in white dress with blue/white background.",
     },
     {
       src: "https://file.rajanagarwal.xyz/clock.jpg",
